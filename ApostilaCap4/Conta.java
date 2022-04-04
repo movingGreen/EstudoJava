@@ -17,6 +17,13 @@ public class Conta {
         return this.saldo * 0.1;
     }
     String recuperaDadosParaImpressao(){
-        return "\n==============\ntitular: " + this.titular + "\nNumero: " + this.numero + "\nAgência: " + this.agencia + "\nSaldo: " + this.saldo + "\nData de abertura: " + this.dataDeAbertura + "\nRendimento: " + calculaRendimento();
+        String dados = "\nTitular: " + this.titular;
+        dados += "\nNumero: " + this.numero;
+        dados += "\nAgência: " + this.agencia;
+        dados += "\nSaldo: " + this.saldo;
+        dados += "\nDia: " + this.dataDeAbertura.dia;
+        dados += "\nMês: " + this.dataDeAbertura.mes;
+        dados += "\nAno: " + this.dataDeAbertura.ano;
+        return dados;
     }
 }

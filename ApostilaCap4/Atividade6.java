@@ -6,5 +6,6 @@ public class Atividade6 {
         c1.titular = "Abc";
         Data data = new Data();
         c1.dataDeAbertura = data;
+        
     }
 }
