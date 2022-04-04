@@ -7,7 +7,7 @@ public class SerieFibonacci {
         System.out.println(fibonacciA);
         System.out.println(fibonacciB); 
 
-        for (long i = 0; fibonacciA <= 100; i++) {
+        while (fibonacciA <= 100) {
             fibonacciA += fibonacciB;
             fibonacciB += fibonacciA;
             System.out.println(fibonacciA);
