@@ -21,9 +21,7 @@ public class Conta {
         dados += "\nNumero: " + this.numero;
         dados += "\nAgência: " + this.agencia;
         dados += "\nSaldo: " + this.saldo;
-        dados += "\nDia: " + this.dataDeAbertura.dia;
-        dados += "\nMês: " + this.dataDeAbertura.mes;
-        dados += "\nAno: " + this.dataDeAbertura.ano;
+        dados += "\nData de abertura: " + this.dataDeAbertura.formatada();
         return dados;
     }
 }
